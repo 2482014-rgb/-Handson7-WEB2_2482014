@@ -26,8 +26,18 @@ dependencies {
         // Load .env file implementation
         implementation 'me.paulschwarz:spring-dotenv:4.0.0'
     }
+
+    // Spring Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
 }
+
+
+
 
 tasks.named('test') {
     useJUnitPlatform()
